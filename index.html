@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #ff8c42;
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #313f3f;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: background 0.3s;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background: #e5e9eb;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #about {
+            text-align: center;
+            background: whitesmoke;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0,0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px 0;
+            border: 4px solid #f27100;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .Projects-container,
+        .education-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card,
+        .education-card {
+            background: #f8e671;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10PX;
+        }
+
+        .project-card,
+        .projects-card {
+            background: #ffeb66;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10PX;
+        }
+
+        .education-img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        #contact {
+            background: whitesmoke;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #contact a{
+            color: #006699;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #004466;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Surya Kusuma Prasetyo Aji</h1>
+        <p>Network Sniffer | Web Developer | Computer Laptop Hardware and Network Technician</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">My Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="IMG.jpg" alt="Foto Profil" class="profile-img">
+        <p>Saya adalah Web Developer and White Hat Hacker yang bersemangat menambah pengalaman di bidang IT</p>
+    </section>
+
+    <section id="projects">
+    <h2>My Projects</h2>
+    <div class="Projects-container">
+        <div class="project-card">
+            <h3>My Projects 1</h3>
+            <p>None</p>
+        </div>
+        <div class="project-card">
+            <h3>My Projects 2</h3>
+            <p>None</p>
+        </div>
+        <div class="project-card">
+            <h3>My Projects 3</h3>
+            <p>Proyek lainnya...</p>
+        </div>
+        <!-- Tambahan link ke halaman proyek lainnya -->
+        <div class="project-card">
+            <h3><a href="my-projects.html" style="color: inherit; text-decoration: none;">Project Lainnya</a></h3>
+            <p>Lihat lebih banyak proyek yang telah saya kerjakan.</p>
+        </div>
+    </div>
+</section>
+    
+    
+    <section id="education">
+        <h2>Riwayat Pendidikan</h2>
+        <div class="education-container">
+            <div class="education-card">
+                <img src="1.jpg" alt="SD" class="education-img">
+                <h3>SD</h3>
+                <p>Saya bersekolah di SD Negeri 2 Sukorejo Kulon, dengan pengalaman belajar selama 6 tahun.</p>
+            </div>
+            <div class="education-card">
+                <img src="smp.png" alt="SMP" class="education-img">
+                <h3>SMP</h3>
+                <p>Saya melanjutkan ke SMP Negeri 1 Kalidawir, dengan pengalaman belajar 3 tahun.</p>
+            </div>
+            <div class="education-card">
+                <img src="smk.jpg" alt="SMK" class="education-img">
+                <h3>SMK</h3>
+                <p>Saya menempuh pendidikan di SMK Negeri 1 Rejotangan dengan fokus pada jurusan Teknik Komputer dan Jaringan.</p>
+            </div>
+            <div class="education-card">
+                <img src="kampusjpeg.jpeg" alt="Universitas" class="education-img">
+                <h3>Perguruan Tinggi</h3>
+                <p>Saya belajar lebih dalam tentang IT di Universitas Merdeka Malang dengan strata S1 di Jurusan Sistem Informasi.</p>
+            </div>
+        </div>
+    </section>
+    
+ <section id="contact">
+    <h2>My Contact</h2>
+    <p>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=23083000040@student.unmer.ac.id&su=Halo%20Surya&body=Portofolio%20anda%20membuat%20saya%20tertarik." target="_blank">
+    23083000040@student.unmer.ac.id
+</a>
+</p>
+<p>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/surya-kusuma-prasetyo-aji-09011a361" target="_blank">www.linkedin.com/in/surya-kusuma-prasetyo-aji-09011a361</a>
+</p>
+</section>
+
+
+    <footer>
+        <p>&copy; 2025 Surya</p>
+    </footer>
+    <script src="js.script.js"></script>
+</body>
+</html>
